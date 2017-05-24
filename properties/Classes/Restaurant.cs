@@ -13,7 +13,7 @@ namespace Rstrnt
         }
 
 
-        public Restaurant(int id, float val, float ar, string loc, float we, float le, float ge, float inc, float outc) : base(id, val, ar, loc, we, le, ge, inc, outc)
+        public Restaurant( float val, float ar, string loc, float we, float le, float ge, float inc, float outc) : base(val, ar, loc, we, le, ge, inc, outc)
         {
 
         }

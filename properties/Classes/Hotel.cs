@@ -21,7 +21,7 @@ namespace Htl
 
         }
 
-        public Hotel (int id, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf, Restaurant R) : base(id, val, ar, loc, we, le, ge, inc, outc)
+        public Hotel (float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf, Restaurant R) : base( val, ar, loc, we, le, ge, inc, outc)
         {
             restaurant = R;
             nrRooms = nr;
@@ -41,7 +41,7 @@ namespace Htl
         
 
         //constructor without restaurant
-        public Hotel(int id, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf) : base(id, val, ar, loc, we, le, ge, inc, outc)
+        public Hotel(float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf) : base( val, ar, loc, we, le, ge, inc, outc)
         {
             
             nrRooms = nr;

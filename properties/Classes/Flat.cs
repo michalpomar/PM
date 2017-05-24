@@ -17,7 +17,7 @@ namespace Flt
 
         }
 
-        public Flat(int id, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short gr, short na, short nf, Existence el) : base(id, val, ar, loc, we, le, ge, inc, outc)
+        public Flat( float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short gr, short na, short nf, Existence el) : base( val, ar, loc, we, le, ge, inc, outc)
         {
             garages = gr;
             nrApartments = na;

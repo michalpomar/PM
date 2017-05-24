@@ -15,8 +15,9 @@ namespace AbstractProperty
             yes
         }
 
+        static int instances;
 
-        protected int idProperty; //number for identification
+        protected int idProperty = 0; //number for identification
         protected double value; //value in hypothetical currency 
         protected float area; //physical area measured in square meters
         protected string location; //address of given property
@@ -45,9 +46,9 @@ namespace AbstractProperty
         }
 
 
-        protected Property(int id, float val, float ar, string loc, float we, float le, float ge, float inc, float outc)
+        protected Property(float val, float ar, string loc, float we, float le, float ge, float inc, float outc)
         {
-            idProperty = id;
+            idProperty = ++instances;
             value = val;
             area = ar;
             location = loc;
@@ -65,11 +66,7 @@ namespace AbstractProperty
 
         
         
-        public int getId()
-        {
-            return this.idProperty;
-        }
-
+        
 
         public void ModifyProperty() //Edits existing information about property, overwrites data in database.
         {
