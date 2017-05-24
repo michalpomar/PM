@@ -4,13 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AbstractProperty;
-using Hs;
-using Frm;
-using Aprtmnt;
-using Rstrnt;
-using Htl;
-using Flt;
 using Artificial_database;
 
 

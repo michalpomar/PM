@@ -61,6 +61,12 @@ namespace AbstractProperty
             totalOutcome = outc;
         }
 
+
+        public int getId()
+        {
+            return idProperty;
+        }
+
         public abstract void Status(); //overloaded function showing status of property
         
 
