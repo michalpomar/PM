@@ -13,6 +13,7 @@ namespace Htl
         private Restaurant restaurant;
         private short nrRooms;
         private bool cafeteria;
+        private bool _restaurant = false;
 
 
         public Hotel() : base()
@@ -33,6 +34,8 @@ namespace Htl
             {
                 cafeteria = false;
             }
+
+            _restaurant = true;
         }
 
         
@@ -53,8 +56,35 @@ namespace Htl
             }
         }
 
+        ~Hotel() {}
+
+        public override void Status()
+        {
+            Console.WriteLine(" Hotel \n ID:{0} \n Value: {1} \n Area: {2} \n Location: {3} \n Water expenses: {4} \n Light expenses: {5} \n Gas expenses: {6} \n Monthly Income: {7} \n Monthly Outcome: {8} \n Total Income: {9} \n Total Outcome: {10} \n Number of rooms: {11} ", this.idProperty, this.value, this.area, this.location, this.waterExpenses, this.lightExpenses, this.gasExpenses, this.incomes, this.outcomes, this.totalIncome, this.totalOutcome, this.nrRooms);
+
+            if (this.cafeteria == true)
+            {
+                Console.WriteLine(" Cafeteria: yes");
+            }
+
+            if (this.cafeteria == false)
+            {
+                Console.WriteLine(" Cafeteria: no");
+            }
+
+            if(this._restaurant == true)
+            {
+                Console.WriteLine(" Restaurant: yes");
+            }
+
+            if(this._restaurant == false)
+            {
+                Console.WriteLine(" Restaurant: no");
+            }
+
+            
 
 
-        ~Hotel() { }
+        }
     }
 }

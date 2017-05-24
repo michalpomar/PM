@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Apartment.cs" />
+    <Compile Include="Classes\Artificial_database.cs" />
     <Compile Include="Classes\House.cs" />
     <Compile Include="Classes\Farm.cs" />
     <Compile Include="Classes\Flat.cs" />
@@ -43,7 +44,6 @@
     <Compile Include="Classes\Property.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Classes\Restaurant.cs" />
-    <Compile Include="Classes\Properties.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -16,17 +16,17 @@ namespace AbstractProperty
         }
 
 
-        protected int idProperty;
-        protected float value;
-        protected float area;
-        protected string location;
-        protected float waterExpenses;
-        protected float lightExpenses;
-        protected float gasExpenses;
-        protected float incomes;
-        protected float outcomes;
-        protected float totalIncome;
-        protected float totalOutcome;
+        protected int idProperty; //number for identification
+        protected double value; //value in hypothetical currency 
+        protected float area; //physical area measured in square meters
+        protected string location; //address of given property
+        protected float waterExpenses; //monthly outcome regarding water expenses
+        protected float lightExpenses; //monthly outcome regarding light expenses
+        protected float gasExpenses; //monthly outcome regarding gas expenses
+        protected float incomes; //general monthly income
+        protected float outcomes; //general monthly outcome
+        protected float totalIncome; // total income counted since creating property object in program 
+        protected float totalOutcome; //total outcome counter since creating property object in program
 
 
         protected Property()
@@ -60,8 +60,15 @@ namespace AbstractProperty
             totalOutcome = outc;
         }
 
+        public abstract void Status(); //overloaded function showing status of property
         
 
+        
+        
+        public int getId()
+        {
+            return this.idProperty;
+        }
 
 
         public void ModifyProperty() //Edits existing information about property, overwrites data in database.

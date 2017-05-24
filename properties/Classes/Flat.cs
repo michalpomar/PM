@@ -1,4 +1,6 @@
-﻿using System;
+﻿//A whole flat with all of its apartments
+
+using System;
 using AbstractProperty;
 
 namespace Flt
@@ -33,5 +35,20 @@ namespace Flt
         }
 
          ~Flat() { }
+
+        public override void Status()
+        {
+            Console.WriteLine(" Flat \n ID:{0} \n Value: {1} \n Area: {2} \n Location: {3} \n Water expenses: {4} \n Light expenses: {5} \n Gas expenses: {6} \n Monthly Income: {7} \n Monthly Outcome: {8} \n Total Income: {9} \n Total Outcome: {10} \n Number of garages: {11} \n Number of floors: {12} \n Number of apartments: {13}", this.idProperty, this.value, this.area, this.location, this.waterExpenses, this.lightExpenses, this.gasExpenses, this.incomes, this.outcomes, this.totalIncome, this.totalOutcome, this.garages, this.nrFloors, this.nrApartments);
+            
+            if(elevator == true)
+            {
+                Console.WriteLine(" Elevator: yes");
+            }
+
+            if(elevator == false)
+            {
+                Console.WriteLine(" Elevator: no");
+            }
+        }
     }
 }
