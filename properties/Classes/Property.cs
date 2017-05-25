@@ -17,18 +17,18 @@ namespace AbstractProperty
 
         static int instances;
 
-        protected string name;
+        protected string name; //name of property
         protected int idProperty = 0; //number for identification
         protected double value; //value in hypothetical currency 
-        protected float area; //physical area measured in square meters
+        protected double area; //physical area measured in square meters
         protected string location; //address of given property
-        protected float waterExpenses; //monthly outcome regarding water expenses
-        protected float lightExpenses; //monthly outcome regarding light expenses
-        protected float gasExpenses; //monthly outcome regarding gas expenses
-        protected float incomes; //general monthly income
-        protected float outcomes; //general monthly outcome
-        protected float totalIncome; // total income counted since creating property object in program 
-        protected float totalOutcome; //total outcome counter since creating property object in program
+        protected double waterExpenses; //monthly outcome regarding water expenses
+        protected double lightExpenses; //monthly outcome regarding light expenses
+        protected double gasExpenses; //monthly outcome regarding gas expenses
+        protected double incomes; //general monthly income
+        protected double outcomes; //general monthly outcome
+        protected double totalIncome; // total income counted since creating property object in program 
+        protected double totalOutcome; //total outcome counter since creating property object in program
 
 
         protected Property()
@@ -48,7 +48,7 @@ namespace AbstractProperty
         }
 
 
-        protected Property(string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc)
+        protected Property(string nam, double val, double ar, string loc, double we, double le, double ge, double inc, double outc)
         {
             name = nam;
             idProperty = ++instances;

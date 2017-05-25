@@ -13,7 +13,7 @@ namespace Rstrnt
         }
 
 
-        public Restaurant( string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc) : base(nam, val, ar, loc, we, le, ge, inc, outc)
+        public Restaurant( string nam, double val, double ar, string loc, double we, double le, double ge, double inc, double outc) : base(nam, val, ar, loc, we, le, ge, inc, outc)
         {
 
         }

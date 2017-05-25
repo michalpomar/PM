@@ -19,7 +19,7 @@ namespace Aprtmnt
 
         }
 
-        public Apartment( string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short fl, short nr, short nb, Existence bal, Existence gr) : base (nam, val, ar, loc, we, le, ge, inc, outc)
+        public Apartment( string nam, double val, double ar, string loc, double we, double le, double ge, double inc, double outc, short fl, short nr, short nb, Existence bal, Existence gr) : base (nam, val, ar, loc, we, le, ge, inc, outc)
         {
             
 

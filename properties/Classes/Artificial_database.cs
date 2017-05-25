@@ -54,7 +54,198 @@ namespace Artificial_database
 
         static public void AddProperty()
         {
+            string type;
+            string nam;
+            double val;
+            double ar;
+            string loc;
+            double we;
+            double le;
+            double ge;
+            double inc;
+            double outc;
 
+            Console.WriteLine("What kind of property would you like to Add? \n Write one of the following: \n Hotel \n Restaurant \n House \n Flat \n Apartment \n Farm");
+            type = Console.ReadLine();
+
+            if(type == "Hotel")
+            {
+
+                short nr;
+                string c;
+                string r;
+                Property.Existence cafe;
+
+                Console.WriteLine("Property's name (text): ");
+                nam = Console.ReadLine();
+
+                Console.WriteLine("Property's value (number): ");
+                val = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's area (number)");
+                ar = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's location (text)");
+                loc = Console.ReadLine();
+
+                Console.WriteLine("Property's water expenses (number)");
+                we = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's light expenses (number)");
+                le = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's gas expenses (number)");
+                ge = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly income (number)");
+                inc = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly outcome (number)");
+                outc = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Number of rooms in Hotel");
+                nr = Convert.ToInt16(Console.ReadLine());
+
+                Console.WriteLine("Does your hotel have cafeteria? (Write 'yes' if it does)");
+                c = Console.ReadLine();
+                if (c == "yes")
+                {
+                    cafe = Property.Existence.yes;
+                }
+                else
+                    cafe = Property.Existence.no;
+
+                Console.WriteLine("Does your hotel have a restaurant? (If it's in the database, write it's name)");
+                
+
+
+
+
+
+
+                Hotel newProp = new Hotel(nam, val, ar, loc, we, le, ge, inc, outc, nr, cafe);
+                Properties.Add(newProp);
+
+            }
+
+            if(type == "Restaurant") //basic //done
+            {
+
+                Console.WriteLine("Please, insert data for your restaurant: ");
+
+                Console.WriteLine("Property's name (text): ");
+                nam = Console.ReadLine();
+
+                Console.WriteLine("Property's value (number): ");
+                val = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's area (number)");
+                ar = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's location (text)");
+                loc = Console.ReadLine();
+
+                Console.WriteLine("Property's water expenses (number)");
+                we = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's light expenses (number)");
+                le = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's gas expenses (number)");
+                ge = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly income (number)");
+                inc = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly outcome (number)");
+                outc = Convert.ToDouble(Console.ReadLine());
+
+                Restaurant newProp = new Restaurant(nam, val, ar, loc, we, le, ge, inc, outc);
+                Properties.Add(newProp);
+            }
+
+            if (type == "House") //basic //done
+            {
+              
+                Console.WriteLine("Please, insert data for your house: ");
+
+                Console.WriteLine("Property's name (text): ");
+                nam = Console.ReadLine();
+
+                Console.WriteLine("Property's value (number): ");
+                val = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's area (number)");
+                ar = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's location (text)");
+                loc = Console.ReadLine();
+
+                Console.WriteLine("Property's water expenses (number)");
+                we = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's light expenses (number)");
+                le = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's gas expenses (number)");
+                ge = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly income (number)");
+                inc = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly outcome (number)");
+                outc = Convert.ToDouble(Console.ReadLine());
+
+                Restaurant newProp = new Restaurant(nam, val, ar, loc, we, le, ge, inc, outc);
+                Properties.Add(newProp);
+            }
+
+            if (type == "Flat")
+            {
+                Console.WriteLine("Please, insert data in the following order");
+            }
+
+            if(type == "Apartment")
+            {
+                Console.WriteLine("Please, insert data in the following order");
+            }
+
+            if(type == "Farm") //basic //done
+            {
+                
+
+                Console.WriteLine("Please, insert data for your farm: ");
+
+                Console.WriteLine("Property's name (text): ");
+                nam = Console.ReadLine();
+
+                Console.WriteLine("Property's value (number): ");
+                val = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's area (number)");
+                ar = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's location (text)");
+                loc = Console.ReadLine();
+
+                Console.WriteLine("Property's water expenses (number)");
+                we = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's light expenses (number)");
+                le = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's gas expenses (number)");
+                ge = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly income (number)");
+                inc = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Property's monthly outcome (number)");
+                outc = Convert.ToDouble(Console.ReadLine());
+
+                Restaurant newProp = new Restaurant(nam, val, ar, loc, we, le, ge, inc, outc);
+                Properties.Add(newProp);
+            }
         }
 
 

@@ -38,9 +38,9 @@ namespace Main_namespace
             //}
 
 
-           // DummyClass.SearchProperty("Hilton");
+            // DummyClass.SearchProperty("Hilton");
 
-
+            DummyClass.AddProperty();
 
 
 
