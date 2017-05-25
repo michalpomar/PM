@@ -17,6 +17,7 @@ namespace AbstractProperty
 
         static int instances;
 
+        protected string name;
         protected int idProperty = 0; //number for identification
         protected double value; //value in hypothetical currency 
         protected float area; //physical area measured in square meters
@@ -32,6 +33,7 @@ namespace AbstractProperty
 
         protected Property()
         {
+            name = "null";
             idProperty = 0;
             value = 0;
             area = 0;
@@ -46,8 +48,9 @@ namespace AbstractProperty
         }
 
 
-        protected Property(float val, float ar, string loc, float we, float le, float ge, float inc, float outc)
+        protected Property(string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc)
         {
+            name = nam;
             idProperty = ++instances;
             value = val;
             area = ar;
@@ -70,7 +73,10 @@ namespace AbstractProperty
         public abstract void Status(); //overloaded function showing status of property
         
 
-        
+        public string getName()
+        {
+            return name;
+        }
         
         
 

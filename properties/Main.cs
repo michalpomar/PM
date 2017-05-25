@@ -23,14 +23,22 @@ namespace Main_namespace
             //Console.WriteLine(DummyClass.Properties[2].getId()); //accessed through the static database
 
 
+            //DummyClass.Properties.Remove(DummyClass.Properties[2]);
+
+            //for (int i = 0; i < DummyClass.Properties.Count; i++)
+            //{
+            //    DummyClass.Properties[i].Status();
+            //    Console.WriteLine("\n");
+            //}
 
 
-            for ( int i = 0; i < DummyClass.Properties.Count; i++)
-            {
-                DummyClass.Properties[i].Status();
-                Console.WriteLine("\n");
-            }
+            //if(DummyClass.Properties[0].GetType() == typeof(Rstrnt.Restaurant))
+            //{
+            //    Console.WriteLine("To jest restauracja");
+            //}
 
+
+           // DummyClass.SearchProperty("Hilton");
 
 
 

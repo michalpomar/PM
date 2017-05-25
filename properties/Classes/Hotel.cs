@@ -21,7 +21,7 @@ namespace Htl
 
         }
 
-        public Hotel (float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf, Restaurant R) : base( val, ar, loc, we, le, ge, inc, outc)
+        public Hotel (string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf, Restaurant R) : base( nam, val, ar, loc, we, le, ge, inc, outc)
         {
             restaurant = R;
             nrRooms = nr;
@@ -41,7 +41,7 @@ namespace Htl
         
 
         //constructor without restaurant
-        public Hotel(float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf) : base( val, ar, loc, we, le, ge, inc, outc)
+        public Hotel(string nam, float val, float ar, string loc, float we, float le, float ge, float inc, float outc, short nr, Existence cf) : base( nam, val, ar, loc, we, le, ge, inc, outc)
         {
             
             nrRooms = nr;
@@ -60,7 +60,7 @@ namespace Htl
 
         public override void Status()
         {
-            Console.WriteLine(" Hotel \n ID:{0} \n Value: {1} \n Area: {2} \n Location: {3} \n Water expenses: {4} \n Light expenses: {5} \n Gas expenses: {6} \n Monthly Income: {7} \n Monthly Outcome: {8} \n Total Income: {9} \n Total Outcome: {10} \n Number of rooms: {11} ", this.idProperty, this.value, this.area, this.location, this.waterExpenses, this.lightExpenses, this.gasExpenses, this.incomes, this.outcomes, this.totalIncome, this.totalOutcome, this.nrRooms);
+            Console.WriteLine(" Hotel \n Name: {12} \n ID:{0} \n Value: {1} \n Area: {2} \n Location: {3} \n Water expenses: {4} \n Light expenses: {5} \n Gas expenses: {6} \n Monthly Income: {7} \n Monthly Outcome: {8} \n Total Income: {9} \n Total Outcome: {10} \n Number of rooms: {11} ", this.idProperty, this.value, this.area, this.location, this.waterExpenses, this.lightExpenses, this.gasExpenses, this.incomes, this.outcomes, this.totalIncome, this.totalOutcome, this.nrRooms, this.name);
 
             if (this.cafeteria == true)
             {
